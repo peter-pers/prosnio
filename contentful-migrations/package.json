@@ -1,0 +1,26 @@
+{
+  "name": "prosnio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "npx contentful space migration migrations/01-create-content-types.js --yes",
+    "import-data": "node migrations/02-migrate-data.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/peter-pers/prosnio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peter-pers/prosnio/issues"
+  },
+  "homepage": "https://github.com/peter-pers/prosnio#readme",
+  "dependencies": {
+    "contentful-cli": "^1.10.0",
+    "contentful-management": "^7.51.3",
+    "dotenv": "^14.3.2"
+  }
+}
